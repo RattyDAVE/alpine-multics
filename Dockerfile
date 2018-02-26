@@ -1,12 +1,11 @@
 FROM alpine:edge
 
-ENV BUILDPKGS "git libtool automake make clang m4 sudo autoconf"
+ENV BUILDPKGS "git libtool automake make clang m4 sudo autoconf alpine-sdk"
 
 RUN apk --no-cache add --virtual build-dependencies $BUILDPKGS && \
 \
   mkdir -p /opt/multics_install  && \
   cd /opt/multics_install  && \
-  apk add git libtool automake make clang m4 sudo autoconf  && \
   wget https://github.com/libuv/libuv/archive/v1.x.zip  && \
   unzip v1.x && \
   cd libuv-1.x && \
