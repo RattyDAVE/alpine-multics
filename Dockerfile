@@ -19,7 +19,8 @@ RUN apk --no-cache add --virtual build-dependencies $BUILDPKGS && \
   tar xfz source.tgz && \
   cd dps8m-code && \
   make -j $(nproc) && \
-\
+  sudo make install && \
+  \
   cd /opt  && \
   #rm -R /opt/multics_install && \
 \
@@ -30,7 +31,7 @@ RUN apk --no-cache add --virtual build-dependencies $BUILDPKGS && \
   #rm QuickStart_MR12.6f.zip && \
   mv QuickStart_MR12.6f qs && \
 \
-  apk del build-dependencies && \
+  #apk del build-dependencies && \
   rm -rf /var/cache/apk/*
   
 EXPOSE 6180
