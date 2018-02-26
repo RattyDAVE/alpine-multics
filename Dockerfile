@@ -22,16 +22,16 @@ RUN apk --no-cache add --virtual build-dependencies $BUILDPKGS && \
   sudo make install && \
   \
   cd /opt  && \
-  #rm -R /opt/multics_install && \
+  rm -R /opt/multics_install && \
 \
   mkdir -p /opt/multics && \
   cd /opt/multics && \
   wget https://s3.amazonaws.com/eswenson-multics/public/releases/MR12.6f/QuickStart_MR12.6f.zip && \
   unzip QuickStart_MR12.6f.zip && \
-  #rm QuickStart_MR12.6f.zip && \
+  rm QuickStart_MR12.6f.zip && \
   mv QuickStart_MR12.6f qs && \
 \
-  #apk del build-dependencies && \
+  apk del build-dependencies && \
   rm -rf /var/cache/apk/*
   
 EXPOSE 6180
