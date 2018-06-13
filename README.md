@@ -34,10 +34,10 @@ docker run -dit --name multics rattydave/alpine-multics:latest
 docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' multics
 ```
 
-Then telnet on port 6180 to the container ip address on port 3270.
+Then telnet on port 6180 to the container ip address on port 6180.
 
 ```
-telnet ipaddress 3270
+telnet ipaddress 6180
 ```
 
 #To Login
