@@ -10,7 +10,7 @@ RUN mkdir -p /opt/multics && \
 \
   cd qs && \
   wget https://github.com/RattyDAVE/alpine-multics/blob/master/minimal/Linux_dps8.tgz && \
-  tar -xvzf Linux_dps8.tgz
+  tar -xvf Linux_dps8.tgz
 
 #FROM scratch		
 		
