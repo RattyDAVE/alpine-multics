@@ -1,5 +1,5 @@
-#FROM FROM alpine:edge as builder
-FROM FROM alpine:edge
+#FROM alpine:edge as builder
+FROM alpine:edge
 
 RUN mkdir -p /opt/multics && \
   cd /opt/multics && \
