@@ -1,5 +1,5 @@
-#FROM alpine:edge as builder
-FROM alpine:edge
+FROM alpine:edge as builder
+#FROM alpine:edge
 
 RUN mkdir -p /opt/multics && \
   cd /opt/multics && \
@@ -12,10 +12,10 @@ RUN mkdir -p /opt/multics && \
   wget -O dps8 https://github.com/RattyDAVE/alpine-multics/blob/master/minimal/dps8?raw=true && \
   chmod 755 dps8
 
-#FROM scratch		
+FROM scratch		
 		
 WORKDIR /opt/multics/qs	
-#COPY --from=builder /opt/multics/qs .		
+COPY --from=builder /opt/multics/qs .		
 		
 EXPOSE 6180
 ENTRYPOINT ["dps8", "MR12.6f_boot.ini"]
