@@ -9,8 +9,8 @@ RUN mkdir -p /opt/multics && \
   mv QuickStart_MR12.6f qs && \
 \
   cd qs && \
-  wget https://github.com/RattyDAVE/alpine-multics/blob/master/minimal/Linux_dps8.tgz && \
-  tar -xvf Linux_dps8.tgz
+  wget https://github.com/RattyDAVE/alpine-multics/blob/master/minimal/dps8 && \
+  chmod 755 dps8
 
 #FROM scratch		
 		
