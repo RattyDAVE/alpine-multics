@@ -49,7 +49,7 @@ Then telnet on port 6180 to the container ip address on port 6180.
 telnet ipaddress 6180
 ```
 
-#To Login
+# To Login
 
 In a new shell window, do ```telnet localhost 6180```
 
