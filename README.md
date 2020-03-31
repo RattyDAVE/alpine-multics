@@ -25,6 +25,14 @@ docker run -d --name multics \
            rattydave/alpine-multics:latest
 ```
 
+It takes a few minutes to boot.
+
+To check the logs use
+
+```
+docker logs -f multics
+```
+
 telnet to port 6180 on the docker host.
 
 Or
