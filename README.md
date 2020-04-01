@@ -19,19 +19,31 @@ Use https://github.com/RattyDAVE/alpine-multics/issues to send feedback, issues,
 
 ## Usage
 
+### Running
+
+Version 1 of the dps8m emulator.
 ```
 docker run -d --name multics \
            -p 6180:6180 \
            rattydave/alpine-multics:latest
 ```
 
+Or the latest beta of the dps8m emulator.
+```
+docker run -d --name multics \
+           -p 6180:6180 \
+           rattydave/alpine-multics:beta
+```
+
 It takes a few minutes to boot.
 
-To check the logs use
+### Show Logs
 
 ```
 docker logs -f multics
 ```
+
+### Connect
 
 telnet to port 6180 on the docker host.
 
@@ -49,9 +61,7 @@ Then telnet on port 6180 to the container ip address on port 6180.
 telnet ipaddress 6180
 ```
 
-# To Login
-
-In a new shell window, do ```telnet localhost 6180```
+### Login
 
 Press enter to select the first HSLA port. You should see a login banner.
 
