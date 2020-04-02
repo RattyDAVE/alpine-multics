@@ -21,19 +21,28 @@ Use https://github.com/RattyDAVE/alpine-multics/issues to send feedback, issues,
 
 ### Running
 
-Version 1 of the dps8m emulator.
+Latest Version of the dps8m emulator.
 ```
 docker run -d --name multics \
            -p 6180:6180 \
            rattydave/alpine-multics:latest
 ```
 
-Or the latest beta of the dps8m emulator.
+To run the beta version of the dps8m emulator.
 ```
 docker run -d --name multics \
            -p 6180:6180 \
            rattydave/alpine-multics:beta
 ```
+
+Or force version 1 of the dps8m emulator.
+```
+docker run -d --name multics \
+           -p 6180:6180 \
+           rattydave/alpine-multics:v1
+```
+
+
 
 It takes a few minutes to boot.
 
