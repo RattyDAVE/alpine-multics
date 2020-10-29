@@ -82,3 +82,14 @@ try some commands, e.g. ```who```
 
 give the ```logout``` command when done.
 
+
+## Auto Update
+
+To automatically update I recomend using watchtower.
+
+```
+docker run -d \
+  --name watchtower \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  v2tec/watchtower 
+```
