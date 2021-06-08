@@ -22,7 +22,7 @@ RUN cd /opt/multics_install && \
   git clone https://gitlab.com/dps8m/dps8m  && \
   cd dps8m  && \
   git checkout R2.0 && \
-  make -j $(nproc)  && \
+  make && \
   make install && \
 \
   cd /opt  && \
