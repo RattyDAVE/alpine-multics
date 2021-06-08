@@ -18,10 +18,9 @@ RUN apk --no-cache add --virtual build-dependencies $BUILDPKGS && \
   
   
 RUN cd /opt/multics_install && \
-\
   git clone https://gitlab.com/dps8m/dps8m  && \
   cd dps8m  && \
-  git checkout R2.0 && \
+  #git checkout R2.0 && \
   make && \
   make install && \
 \
