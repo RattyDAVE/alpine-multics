@@ -22,7 +22,8 @@ RUN cd /opt/multics_install && \
   
 RUN  cd /opt/multics_install/dps8m  && \
   #git checkout R2.0 && \
-  git checkout R2.0.1_rc2 && \
+  git checkout rc7 && \
+  #git checkout R2.0.1_rc2 && \
   make -j $(nproc) && \
   make install
   
