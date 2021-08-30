@@ -2,7 +2,7 @@
 FROM alpine:edge
 
 #ENV BUILDPKGS "git libtool automake make clang m4 sudo autoconf alpine-sdk"
-ENV BUILDPKGS "git cmake make clang build-base llvm-static llvm-dev clang-static clang-dev  m4 sudo autoconf alpine-sdk libtool"
+ENV BUILDPKGS "git cmake make clang build-base llvm-static llvm-dev clang-static clang-dev  m4 sudo autoconf alpine-sdk libtool automake"
 
 RUN apk --no-cache add --virtual build-dependencies $BUILDPKGS && \
 \
