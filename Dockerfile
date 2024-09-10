@@ -25,7 +25,7 @@ RUN apk --no-cache add --virtual build-dependencies $BUILDPKGS && \
   #git checkout R1.0 && \
   #git checkout R2.0.1_rc2 && \
   make -j $(nproc) && \
-  make install&& \
+  make install && \
 \
   #RUN  cd /opt  && \
   rm -R /opt/multics_install && \
