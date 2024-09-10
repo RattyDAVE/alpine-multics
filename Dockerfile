@@ -1,5 +1,5 @@
  
-FROM alpine:edge
+FROM alpine:3.18
 
 #ENV BUILDPKGS "git libtool automake make clang m4 sudo autoconf alpine-sdk"
 ENV BUILDPKGS "git cmake make clang build-base llvm-static llvm-dev clang-static clang-dev  m4 sudo autoconf alpine-sdk libtool automake"
